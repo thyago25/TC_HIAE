@@ -14,16 +14,8 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
-      - name: Instalação do Node.js
-        uses: actions/setup-node@v3
+      - name: Cypress run via action oficial
+        uses: cypress-io/github-action@v6
         with:
-          node-version: '18'
-
-      - name: Instalar dependências
-        run: npm install
-
-      - name: Instalar Cypress (binário)
-        run: npx cypress install
-
-      - name: Executar testes Cypress
-        run: npx cypress run
+          build: npm install
+          start: npx cypress run
