@@ -1,8 +1,10 @@
 # TC_HIAE – Testes Automatizados com Cypress
 
+![Cypress Tests](https://github.com/thyago25/TC_HIAE/actions/workflows/cypress.yml/badge.svg)
+
 Este projeto contém testes automatizados com **Cypress** aplicados ao formulário de cadastro do site de demonstração [WPEverest](https://demo.wpeverest.com/user-registration/simple-registration-form/).
 
-Os testes simulam diferentes cenários de preenchimento e validações do formulário, abrangendo tanto casos positivos quanto negativos, conforme desafio técnico.
+Os testes simulam diferentes cenários de preenchimento e validações do formulário, abrangendo tanto casos positivos quanto negativos, conforme desafio técnico proposto pelo Hospital Albert Einstein.
 
 ---
 
@@ -33,27 +35,34 @@ Os testes simulam diferentes cenários de preenchimento e validações do formul
 ### 2. Instalação
 
 ```bash
-# Clone o repositório
 git clone https://github.com/thyago25/TC_HIAE.git
 cd TC_HIAE
-
-# Instale as dependências
 npm install
 ```
 
-### 3. Executar com interface (modo interativo)
+### 3. Executar localmente com interface
 
 ```bash
 npx cypress open
 ```
 
-> Selecione o arquivo `cypress/e2e/Task_HIAE.spec.cy.js` para iniciar os testes.
-
-### 4. Executar em modo headless (linha de comando)
+### 4. Executar em modo headless
 
 ```bash
 npx cypress run
 ```
+
+---
+
+## ⚙️ Integração Contínua (CI)
+
+Este projeto utiliza **GitHub Actions** para:
+
+- Instalar dependências e rodar testes Cypress automaticamente a cada `push` ou `pull request` na branch `main`
+- Registrar vídeos e screenshots das execuções como **artefatos**, que podem ser baixados diretamente na aba **Actions**
+
+> 🔍 Acesse os artefatos em:  
+> Actions → run desejado → seção **Artifacts** → download de vídeos ou screenshots
 
 ---
 
@@ -66,6 +75,9 @@ TC_HIAE/
 │   │   └── Task_HIAE.spec.cy.js
 │   └── support/
 │       └── e2e.js
+├── .github/
+│   └── workflows/
+│       └── cypress.yml
 ├── cypress.config.js
 ├── package.json
 └── README.md
@@ -76,17 +88,18 @@ TC_HIAE/
 ## 🛠️ Tecnologias utilizadas
 
 - [Cypress](https://www.cypress.io/) v12+
-- JavaScript (ES6+)
 - Node.js
+- GitHub Actions
 
 ---
 
 ## 👤 Autor
 
-Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de Desenvolvedor (Tester).
+Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de QA no Hospital Albert Einstein.
 
 ---
 
 ## 📌 Observações
 
-> Embora o projeto utilize apenas Cypress puro, os testes poderiam ser facilmente adaptados ao formato BDD com Gherkin caso necessário, utilizando o `cypress-cucumber-preprocessor`.
+> Os testes estão escritos em JavaScript com Cypress puro, mas o projeto é facilmente adaptável ao formato BDD utilizando Gherkin e `cypress-cucumber-preprocessor`.
+
