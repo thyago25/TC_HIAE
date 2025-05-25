@@ -1,0 +1,14 @@
+{
+  "name": "challenge-web-automation",
+  "version": "1.0.0",
+  "description": "criação de testes automatizados que garantam o funcionamento correto da aplicação.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thyago Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.4.0"
+  }
+}
