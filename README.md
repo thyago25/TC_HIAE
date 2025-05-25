@@ -4,7 +4,7 @@
 
 Este projeto contém testes automatizados com **Cypress** aplicados ao formulário de cadastro do site de demonstração [WPEverest](https://demo.wpeverest.com/user-registration/simple-registration-form/).
 
-Os testes simulam diferentes cenários de preenchimento e validações do formulário, abrangendo tanto casos positivos quanto negativos, conforme desafio técnico proposto pelo Hospital Albert Einstein.
+Os testes simulam diferentes cenários de preenchimento e validações do formulário, abrangendo tanto casos positivos quanto negativos, conforme desafio técnico.
 
 ---
 
@@ -95,7 +95,7 @@ TC_HIAE/
 
 ## 👤 Autor
 
-Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de QA no Hospital Albert Einstein.
+Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de Desenvolvedor (Tester).
 
 ---
 
