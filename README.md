@@ -83,7 +83,7 @@ TC_HIAE/
 
 ## 👤 Autor
 
-Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de QA no Hospital Albert Einstein.
+Desenvolvido por **Thyago Sampaio** como parte de um desafio técnico para a vaga de Desenvolvedor (Tester).
 
 ---
 
